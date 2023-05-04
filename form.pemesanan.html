@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulir Pemesanan</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Form-Pemesanan -->
+    <div class="container">
+      <div class="col-lg-6 col-lg-offset-3">
+        <h4>Formulir Pemesanan</h4>
+        <div class="panel panel-success">
+          <div class="panel-heading">Checkout Ke WhatsApp</div>
+          <div class="panel-body">
+            <div class="form-group">
+              <label>Nama Penerima</label>
+              <input
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Nama"
+                id="name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="email@example.com"
+                id="email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Nomor Kontak / WhatsApp</label>
+              <input
+                type="number"
+                name="phone"
+                class="form-control"
+                placeholder="Nomor Kontak / WhatsApp"
+                id="phone"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Alamat Rumah / Penerima</label>
+              <input
+                type="text"
+                name="Alamat"
+                class="form-control"
+                placeholder="Alamat"
+                id="alamat"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label>Pilih Produk</label>
+              <select name="product" class="form-control" id="product" required>
+                <option value="">-- Pilih Produk --</option>
+                <option value="produk_1">Produk 1</option>
+                <option value="produk_2">Produk 2</option>
+                <option value="produk_3">Produk 3</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Catatan</label>
+              <textarea
+                name="description"
+                class="form-control"
+                rows="3"
+                id="description"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success send">Pesan via WhatsApp</button>
+            </div>
+            <!-- Alert Info -->
+            <div id="text-info"></div>
+            <!-- Alert Info -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Form-Pemesanan-end -->
+  </body>
+  <script src="javascript/main.js"></script>
+</html>
