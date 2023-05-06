@@ -80,8 +80,8 @@ btnSend.addEventListener("click", () => {
       "%0A" +
       "*Alamat* : " +
       input_alamat +
-      "%0A";
-    "*Produk* : " +
+      "%0A" +
+      "*Produk* : " +
       input_product +
       "%0A" +
       "*Catatan* : " +
